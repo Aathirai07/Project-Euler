@@ -1,4 +1,4 @@
-//Project Euler: Problem 10: Largest product in a gridPassed
+//Project Euler: Problem 11: Largest product in a gridPassed
 
 //What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in a given arr grid?
 //Solution
