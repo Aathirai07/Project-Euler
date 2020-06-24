@@ -16,7 +16,7 @@ function isPalindrome(x, base) {
     }
     return true;
 }
-function generatePalindrome2(x, oddPalindrome) {
+function generatePalindrome(x, oddPalindrome) {
     var res = x;
     x >>= oddPalindrome;
     while (x > 0) {
@@ -28,12 +28,12 @@ function generatePalindrome2(x, oddPalindrome) {
 function doubleBasePalindromes(n) {
     var sum = 0;
     for (var parity = 0; parity < 2; parity++) {
-        var p = generatePalindrome2(1, parity);
+        var p = generatePalindrome(1, parity);
         for (var i = 2; p < n; i++) {
             if (isPalindrome(p, 10)) {
                 sum += p;
             }
-            p = generatePalindrome2(i, parity);
+            p = generatePalindrome(i, parity);
         }
     }
     return sum;
